@@ -1,4 +1,12 @@
 /*-------------------------------------------*/
+/* VARIABLES */
+/*-------------------------------------------*/
+:root {
+  --base: #e67e22;
+  --base-hover: #bf6516;
+}
+
+/*-------------------------------------------*/
 /* BASIC SETUP */
 /*-------------------------------------------*/
 
@@ -26,7 +34,7 @@ html {
   margin: 0 auto;
 }
 
-/* HEADINGS */
+/* HEADINGS  */
 h1 {
   margin: 0;
   margin-bottom: 20px;
@@ -52,31 +60,31 @@ h1 {
 
 .btn-full:link,
 .btn-full:visited {
-  background-color: #e67e22;
-  border: 1px solid #e67e22;
+  background-color: var(--base);
+  border: 1px solid var(--base);
   color: #fff;
   margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  border: 1px solid #e67e22;
-  color: #e67e22;
+  border: 1px solid var(--base);
+  color: var(--base);
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #bf6516;
+  background-color: var(--base-hover);
 }
 
 .btn-full:hover,
 .btn-full:active {
-  border: 1px solid #bf6516;
+  border: 1px solid var(--base-hover);
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid #bf6516;
+  border: 1px solid var(--base-hover);
   color: #fff;
 }
 
@@ -98,4 +106,39 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  word-spacing: 5px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.4s ease;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid var(--base-hover);
 }
