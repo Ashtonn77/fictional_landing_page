@@ -17,13 +17,15 @@
   margin: 0;
 }
 
-html {
+html,
+body {
   background: #fff;
   color: #555;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {
@@ -556,12 +558,15 @@ footer {
 .fb:hover {
   color: #3b5998;
 }
+
 .twitter:hover {
   color: #00aced;
 }
+
 .linked:hover {
   color: #0e76a8;
 }
+
 .insta:hover {
   color: #3f729b;
 }
